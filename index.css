@@ -1,0 +1,194 @@
+:root{
+    --black: #292929;
+    --navGray: #413c3ca6;
+    --bgGray:  #545454;
+    --pink: #ff009d;
+    --pinkRose: #FF66C4;
+    --blue: #0C8CE9;
+    --white:#f1f1f1;
+    --bgblue: #b9e9ff;
+    --navBlue: #53C8FE;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--black);
+    width: 100vw;
+    transition: background 0.2s linear;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    color: var(--white);
+    padding: 0.620rem;
+    border-bottom: var(--pink) solid 0.125rem;
+    cursor: pointer;
+    height: 5rem;
+} 
+
+header h1{
+    padding: 0.620rem;
+    text-align: center;
+}
+header img {
+    max-width: 12.5rem;
+}
+#burguer :hover{
+    color: var(--blue);
+}
+
+nav{
+    background-color: var(--gray);
+    color: var(--navBlue);
+    backdrop-filter: blur(32px);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    font-size: 1.75rem;
+    font-weight: 500;
+    width:100%;
+    height: 95%;
+    z-index: 200;
+    animation: fade 1s;
+    top: 8%;
+    position: absolute;
+}
+
+ul, li{
+    list-style: none;
+    padding: 1.5rem 0 0 0.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    cursor: pointer;
+
+}
+nav a{
+    text-decoration:none ;
+    color: var(--navBlue);
+}
+
+nav a:hover{
+    color:var(--pinkRose);
+    cursor: pointer;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+#curriculum{
+    margin: 1.5rem;
+    background-color: var(--bgGray);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#curriculum img{
+    height: 21.875rem;
+    width: 21.875rem;
+    position: relative;
+}
+#download{
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+color:var(--pinkRose);
+font-weight: 400;
+background-color: var(--bgGray);
+padding: 1rem;
+}
+#download h1 {
+    padding-left: 2rem;
+    font-size: 2.25rem;
+}
+.btn{
+ display: flex;
+ align-items: center;
+ flex-direction: row;
+ justify-content: center;
+ padding: 1.5rem 0.75rem;
+ cursor: pointer;
+}
+.btn a{
+    width: 9.25rem;
+    height: 3.625rem;
+    border-radius: 3.125rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: var(--pinkRose);
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 .5rem;
+    text-align: center;
+    cursor: pointer;
+}
+.btn a:hover{
+   background-color: var(--blue);
+}
+#about-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.75rem;
+    align-content: center;
+    padding: 0.5rem 0.5rem 2rem 0.5rem;
+    background-color: var(--bgGray);
+    margin: 1.5rem;
+}
+#about-me h2{
+    color: var(--pinkRose);
+    padding: 0.25rem;
+    font-size: 2.25rem;
+}
+#about-me p{
+    color:var(--white);
+    padding: 0.25rem;
+    font-size: 1.75rem;
+}
+
+#skills{
+    height: 21.875rem;
+    display: flex;
+    margin: 1.5rem;
+    background-color: var(--bgGray);
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    justify-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+#skills a{
+    text-decoration: none;
+}
+#skills a:hover{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px;
+}
+#skills  i{
+font-size: 3.5rem;
+display: grid;
+}
